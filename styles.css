@@ -1,0 +1,7 @@
+.lab{max-width:720px;margin:20px auto;padding:14px;font:14px/1.4 Arial,Helvetica,sans-serif}
+.lab .box{border:1px solid #ddd;border-radius:10px;padding:12px;background:#fff}
+.lab h1{margin:0 0 10px;font-size:20px}
+.lab .row{padding:8px 0;border-top:1px solid #eee}
+.lab .row:first-of-type{border-top:0}
+.lab .k{color:#666;font-size:12px}
+.lab .v{font-weight:700}

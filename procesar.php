@@ -1,5 +1,5 @@
 <?php
-
+//inicializacion de variables para el resultado y la operacion realizada
 $resultado = "0";
 $operacion_realizada = "";
 

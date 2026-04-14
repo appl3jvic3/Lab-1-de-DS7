@@ -15,7 +15,7 @@ include 'procesar.php';
 </head>
 
 <body>
-
+    // Card de la calculadora
     <div class="calculadora-card">
         <h2>Calculadora Pro</h2>
 
@@ -27,14 +27,14 @@ include 'procesar.php';
                 <?php echo $resultado; ?>
             </p>
         </div>
-
+        // Formulario para ingresar números y seleccionar operación
         <form method="POST" action="">
             <div class="grupo-entrada">
                 <label for="num1">Primer Número</label>
                 <input type="number" step="any" name="num1" id="num1" placeholder="Ej: 10" required
                     value="<?php echo isset($_POST['num1']) ? htmlspecialchars($_POST['num1']) : ''; ?>">
             </div>
-
+            // Dropdown para seleccionar la operación
             <div class="grupo-entrada">
                 <label for="operacion">Operación</label>
                 <select name="operacion" id="operacion">
@@ -43,7 +43,7 @@ include 'procesar.php';
                     <option value="multiplicacion" <?php echo (isset($_POST['operacion']) && $_POST['operacion'] == 'multiplicacion') ? 'selected' : ''; ?>>✖️ Multiplicación</option>
                 </select>
             </div>
-
+            // Entrada para el segundo número
             <div class="grupo-entrada">
                 <label for="num2">Segundo Número</label>
                 <input type="number" step="any" name="num2" id="num2" placeholder="Ej: 5" required
